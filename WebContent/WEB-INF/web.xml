@@ -9,6 +9,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <context-param>
+	<param-name>id</param-name>
+	<param-value>abc</param-value>
+  </context-param>
+  <context-param>
+	<param-name>pw</param-name>
+	<param-value>123</param-value>
+  </context-param>
   <!--
   <servlet>
 	<servlet-name>helloworld</servlet-name>
@@ -19,4 +27,25 @@
 	<url-pattern>/hw</url-pattern>
   </servlet-mapping>
   -->
+  <!--
+
+  <servlet>
+	<servlet-name>InitParam</servlet-name>
+	<servlet-class>com.javalec.ex.InitParam</servlet-class>
+	
+	<init-param>
+	  <param-name>id</param-name>
+	  <param-value>abcde</param-value>
+	</init-param>
+	<init-param>
+	  <param-name>pw</param-name>
+	  <param-value>12345</param-value>
+	</init-param>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>InitParam</servlet-name>
+	<url-pattern>/IP</url-pattern>
+  </servlet-mapping>
+  -->
+
 </web-app>
